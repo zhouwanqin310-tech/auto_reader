@@ -299,4 +299,4 @@ python scripts/check_markdown_structure.py
 
 ## 说明
 
-项目目录里仍保留 `web_server/`，但当前主程序不依赖它。
+本项目只供学术研究使用
