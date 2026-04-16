@@ -1,4 +1,4 @@
-# 论文阅读助手（Paper Assistant）
+# 论文阅读助手（auto_reader）
 
 一个基于 `Python + Flask` 的本地论文阅读与“按需推送”工具：支持论文列表浏览、Markdown 阅读、笔记、AI 对话，以及按主题抓取并生成结构化分析。
 
