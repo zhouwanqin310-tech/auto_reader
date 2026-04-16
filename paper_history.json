@@ -1,0 +1,146 @@
+{
+  "papers": [
+    {
+      "hash": "9751847c694dfaa0",
+      "title": "Relating Word Embedding Gender Biases to Gender Gaps: A Cross-Cultural Analysis",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:11:55.876231"
+    },
+    {
+      "hash": "4bf9372a502ca7c5",
+      "title": "AIGC Text Generation: Technological Evolution, Application Scenarios, and Future Challenges",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:16:58.334026"
+    },
+    {
+      "hash": "7d623e4407ed856a",
+      "title": "Machine Unlearning: A Perspective, Taxonomy, and Benchmark Evaluation",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:22:50.973520"
+    },
+    {
+      "hash": "2e669c8bc6b1e8aa",
+      "title": "Granularity paradox: how emotion taxonomies shape GPT-5’s affective cognition and human-AI alignment",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:29:43.361580"
+    },
+    {
+      "hash": "7b0958821b0322d2",
+      "title": "Building a Strong Instruction Language Model for a Less-Resourced Language",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:34:36.643490"
+    },
+    {
+      "hash": "fedef8b75250bb69",
+      "title": "Artificial Intelligence Models for Predicting Triage in Emergency Departments: Seven-Month Retrospective Comparative Study of Natural Language Processing, Large Language Model, and Joint Embedding Predictive Architectures",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:46:47.863366"
+    },
+    {
+      "hash": "1f710d390dc76a79",
+      "title": "Bias Correction and Explainability Framework for Large Language Models: A Knowledge-Driven Approach",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:52:30.401094"
+    },
+    {
+      "hash": "97637ee532de14e1",
+      "title": "Gender and positional biases in LLM-based hiring decisions: evidence from comparative CV/résumé evaluations",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T20:58:18.792766"
+    },
+    {
+      "hash": "007c9f14f92791ee",
+      "title": "Zero-shot stance detection in practice: insights on training, prompting, and decoding with a capable lightweight LLM",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T21:03:53.479566"
+    },
+    {
+      "hash": "b60b69c4a858f6f3",
+      "title": "Analysis of LLM Bias (Chinese Propaganda &amp; Anti-US Sentiment) in DeepSeek-R1 vs. ChatGPT o3-mini-high",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T21:50:48.218462"
+    },
+    {
+      "hash": "6ad0dc784bda8f2a",
+      "title": "McBE: A Multi-task Chinese Bias Evaluation Benchmark for Large Language Models",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T21:55:23.180213"
+    },
+    {
+      "hash": "f5288ddb1ebb514b",
+      "title": "Exploring the occupational biases and stereotypes of Chinese large language models",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T22:01:33.040596"
+    },
+    {
+      "hash": "359626a463a51d78",
+      "title": "A Dual-Layered Evaluation of Geopolitical and Cultural Bias in LLMs",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T22:07:44.930929"
+    },
+    {
+      "hash": "f0e16fff3eb659dd",
+      "title": "The Mask of Civility: Benchmarking Chinese Mock Politeness Comprehension in Large Language Models",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T22:13:15.377497"
+    },
+    {
+      "hash": "f2df69136b3790c6",
+      "title": "From BERT to LLMs: Comparing and Understanding Chinese Classifier Prediction in Language Models",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T22:18:45.711554"
+    },
+    {
+      "hash": "b81bf18d9e114660",
+      "title": "Natural Language-based Assessment of L2 Oral Proficiency using LLMs",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T22:24:01.310592"
+    },
+    {
+      "hash": "f1eeb8b4bd275e46",
+      "title": "A RoBERTa-Based Functional Syntax Annotation Model for Chinese Texts",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T22:29:16.705194"
+    },
+    {
+      "hash": "4e992308a842e0c1",
+      "title": "Improvement of speech perception following articulatory-target based production training for second language acquisition",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T23:28:50.365038"
+    },
+    {
+      "hash": "994921e12b67ece4",
+      "title": "Better start to bilingual development: Bridging parental beliefs and science through early intervention for Polish families living in Norway",
+      "date": "2026-04-15",
+      "added_at": "2026-04-15T23:34:18.255819"
+    },
+    {
+      "hash": "b016e301dded2c09",
+      "title": "控释尿素不同条施深度下鲜食玉米产量和氮素利用效应",
+      "date": "2026-04-16",
+      "added_at": "2026-04-16T15:54:37.730454"
+    },
+    {
+      "hash": "0665c879668cfc5b",
+      "title": "开关柜典型局部放电类型超声波信号特征量研究",
+      "date": "2026-04-16",
+      "added_at": "2026-04-16T15:54:45.718566"
+    },
+    {
+      "hash": "df6f6c534a170c47",
+      "title": "<article-title>人工智能海洋学研究的计量分析<bold/></article-title>",
+      "date": "2026-04-16",
+      "added_at": "2026-04-16T15:55:19.053018"
+    },
+    {
+      "hash": "c72ded199984e033",
+      "title": "Ethical implications of ChatGPT and other large language models in academia",
+      "date": "2026-04-16",
+      "added_at": "2026-04-16T18:38:49.883893"
+    }
+  ],
+  "dates": [
+    "2026-04-15",
+    "2026-04-16"
+  ]
+}

@@ -1,0 +1,16 @@
+2026-04-16 20:58:56 | INFO | paper_assistant | 日志系统已初始化，写入 /Users/zhoumoqin/Desktop/论文阅读/自动阅读/server.log
+2026-04-16 20:58:56 | INFO | paper_assistant | 定时推送已设置：每天 09:00；检查间隔 24 小时
+2026-04-16 20:58:56 | INFO | paper_assistant | Web 服务启动：port=5001
+⏰ 定时推送已设置: 每天 09:00 + 每 24 小时检查一次
+==================================================
+📚 论文阅读助手 Web 版
+==================================================
+🌐 请访问: http://localhost:5001
+==================================================
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.6:5001
+Press CTRL+C to quit

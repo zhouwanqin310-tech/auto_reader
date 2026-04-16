@@ -1,0 +1,108 @@
+# 论文阅读助手配置文件
+
+# MiniMax API 配置
+miniMax:
+  api_key: ""
+  base_url: "https://api.minimax.chat/v1"
+  model: "MiniMax-M2.7"
+  fallback_model: "MiniMax-Text-01"
+
+# 本地存储路径
+storage:
+  base_dir: ""
+  papers_dir: "papers"
+  pdf_dir: "pdfs"
+  cache_file: "paper_history.json"
+
+# 推送设置
+push:
+  time: "09:00"
+  min_papers: 3
+  max_papers: 5
+  check_interval_hours: 24
+
+# 关注领域（可多选，逗号分隔）
+fields:
+  - "linguistics in AI"
+  - "ai for linguistics"
+  - "linguistic analysis with ai"
+  - "corpus linguistics"
+  - "corpus-based linguistics"
+  - "corpus analysis"
+  - "linguistic corpora"
+  - "AI-assisted language learning"
+  - "computer-assisted language learning"
+  - "AI in language education"
+  - "technology-enhanced language learning"
+  - "language acquisition"
+  - "second language acquisition"
+  - "first language acquisition"
+  - "computational phonology"
+  - "phonological modeling"
+  - "speech phonology"
+  - "phonological analysis"
+  - "semantic parsing"
+
+# 筛选与匹配配置（用于“召回更全 + 精筛更准”，保留 AI 画像筛选）
+filter:
+  profile:
+    # AI 画像（用于 ai_topic_matches_paper）
+    # 说明：允许“CS/AI + 人文/社科/教育”交叉方向；把“纯模型/纯工程 benchmark”作为倾向于不匹配的情形。
+    ai_match_persona: |
+      你是一名关注计算语言学（computational linguistics）、计算辅助语言习得（computer-assisted language learning, CALL）以及“CS/AI 与人文社科/教育结合”的学术领域研究者。
+      你的目标不是只看是否使用了 AI/LLM/NLP，而是判断论文是否明确落在以下应用与研究问题上：
+      1) 语言学/语料语言学/语言分析（语音/音系/语义/句法/语用/语篇/语义表示）与计算方法的结合
+      2) 语言学习、语言教学、二语习得（SLA）、学习者建模、反馈生成、教学支持与评测
+      3) 让 AI 能被教学/评测/实践使用的系统与方法（例如：可解释性、评估框架、面向学习者的交互设计）
+      4) CS/AI 的社会与伦理维度：偏见与公平（fairness/bias）、可解释性（interpretability）、人机交互（HCI）、社会影响（social impact）
+      5) 语言/教育/社科中的评测与方法论（例如：如何设计实验、如何度量改进与泛化）
+
+      判断倾向规则：
+      - 如果论文“主要是纯计算机方法/纯模型优化/纯工程改进/只做通用 benchmark”，但没有清晰的语言学或教育/社会研究问题落点，则倾向不匹配或低匹配。
+      - 如果论文明确面向语言教育/学习者建模/语言分析任务，哪怕使用了 LLM/AI，也应判为匹配。
+      - 如果论文聚焦于偏见、公平、可解释性、交互设计，并且能与语言学习/教育或人文社科问题相连，也可以判为匹配。
+
+  thresholds:
+    # 规则层（粗召回/精筛）阈值：低阈值用于“召回更全”，高阈值用于“减少 AI 浪费”
+    rule_recall_min_score: 10
+    rule_precision_min_score: 18
+    # AI 置信度阈值：低于此阈值即使 matched 也更倾向拒绝（但会触发补救策略保证数量）
+    ai_min_confidence: 0.6
+    # 限制 AI 最多评估候选数量（避免成本失控）
+    max_ai_candidates: 30
+    # 每个 job 的 AI 调用上限（硬限制，超过则不再调用 AI）
+    max_ai_calls_per_job: 100
+
+# 搜索排序优先级
+search_priority:
+  - "relevance"
+  - "published_date"
+  - "citation_count"
+
+# 输出语言设置
+output:
+  language: "chinese"
+  include_english_terms: true
+  save_pdf: true
+
+# AI 主题匹配设置
+ai_match:
+  persona: |
+    你是一名关注计算语言学（computational linguistics）、计算辅助语言习得（computer-assisted language learning, CALL）以及“CS/AI 与人文社科/教育结合”的学术领域研究者。
+    你的判断标准核心是：论文是否有明确的语言学/教育/人文社科研究问题落点，而不仅是“用到了 AI/LLM/NLP”。
+    因此在判断论文是否相关时，请优先关注以下方向：
+    1. 计算方法是否与语言学研究、语言分析、语料分析、语音/音系/语义/句法/语用/语篇分析结合
+    2. 计算方法是否与语言学习、语言教学、二语习得（SLA）、学习者建模、反馈生成、评测与教学支持结合
+    3. 系统/方法是否可解释、可评估，并且能服务真实教育/语言分析任务
+    4. 偏见与公平（fairness/bias）、可解释性（interpretability）、人机交互（HCI）以及社会影响（social impact）若与上述领域有关也可考虑
+    5. 如果论文主要是纯模型优化、纯工程 benchmark、纯通用方法，但没有清晰应用落点，则倾向不匹配或低匹配
+
+# AI 摘要设置
+ai_summary:
+  include_abstract_translation: true
+  include_section_analysis: true
+  include_method_analysis: true
+  include_conclusion_analysis: true
+  include_critical_review: true
+  include_similar_papers: true
+  max_similar_papers: 3
